@@ -1,0 +1,31 @@
+{
+  "name": "my-first-webpack-bundle",
+  "version": "1.0.0",
+  "description": "my-first-webpack-bundle",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx webpack --mode production",
+    "start": "npx webpack-dev-server --mode development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mantr88/my-first-webpack-bundle.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mantr88/my-first-webpack-bundle/issues"
+  },
+  "homepage": "https://mantr88.github.io/my-first-webpack-bundle",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^6.7.3",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  }
+}
